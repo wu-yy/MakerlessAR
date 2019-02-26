@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(EXAMPLE_MARKERLESS_AR)
+project(markerless_ar_demo)
 
 find_package(OpenCV REQUIRED )
 find_package(OpenGL REQUIRED )

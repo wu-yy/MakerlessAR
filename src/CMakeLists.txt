@@ -1,4 +1,4 @@
-add_executable(markerless_ar_demo ARDrawingContext.cpp
+add_executable(markerless_ar_demo main.cpp ARDrawingContext.cpp
 ARDrawingContext.hpp
 CameraCalibration.cpp
 CameraCalibration.hpp
