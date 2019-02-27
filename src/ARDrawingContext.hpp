@@ -1,14 +1,9 @@
-/*****************************************************************************
-*   Markerless AR desktop application.
-******************************************************************************
-*   by Khvedchenia Ievgen, 5th Dec 2012
-*   http://computer-vision-talks.com
-******************************************************************************
-*   Ch3 of the book "Mastering OpenCV with Practical Computer Vision Projects"
-*   Copyright Packt Publishing 2012.
-*   http://www.packtpub.com/cool-projects-with-opencv/book
-*****************************************************************************/
-
+/**
+ * 从 相机拍摄的最新的图像
+ * 摄像机的标定矩阵
+ * 三位空间中的模式姿态
+ * opengl相关的内部函数
+ */
 #ifndef ARDrawingContext_HPP
 #define ARDrawingContext_HPP
 

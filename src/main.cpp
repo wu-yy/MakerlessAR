@@ -1,15 +1,3 @@
-/*****************************************************************************
-*   Markerless AR desktop application.
-******************************************************************************
-*   by Khvedchenia Ievgen, 5th Dec 2012
-*   http://computer-vision-talks.com
-******************************************************************************
-*   Ch3 of the book "Mastering OpenCV with Practical Computer Vision Projects"
-*   Copyright Packt Publishing 2012.
-*   http://www.packtpub.com/cool-projects-with-opencv/book
-*****************************************************************************/
-
-////////////////////////////////////////////////////////////////////
 // File includes:
 #include "ARDrawingContext.hpp"
 #include "ARPipeline.hpp"
@@ -138,8 +126,8 @@ int main(int argc, const char * argv[])
     // Change this calibration to yours:
     CameraCalibration calibration(526.58037684199849f, 524.65577209994706f, 318.41744018680112f, 202.96659047014398f);
 
-    argc =2;
-    argv[1] = "/Users/wuyongyu/CLionProjects/MakerlessAR/screenshot.png";
+    argc =3;
+    argv[1] = "/Users/wuyongyu/CLionProjects/MakerlessAR/src/PyramidPattern.jpg";
     if (argc < 2)
     {
         std::cout << "Input image not specified" << std::endl;
@@ -149,6 +137,7 @@ int main(int argc, const char * argv[])
 
     // Try to read the pattern:
     cv::Mat patternImage = cv::imread(argv[1]);
+//    return 0;
 
     if (patternImage.empty())
     {
@@ -163,6 +152,7 @@ int main(int argc, const char * argv[])
     }
     else if (argc == 3)
     {
+        argv[2] ="/Users/wuyongyu/CLionProjects/MakerlessAR/src/PyramidPatternTest.bmp";
         std::string input = argv[2];
         cv::Mat testImage = cv::imread(input);
         if (!testImage.empty())

@@ -27,6 +27,7 @@ void ARDrawingContextDrawCallback(void* param)
     }
 }
 
+//OPengl 窗口初始化
 ARDrawingContext::ARDrawingContext(std::string windowName, cv::Size frameSize, const CameraCalibration& c)
   : m_isTextureInitialized(false)
   , m_calibration(c)
@@ -123,6 +124,7 @@ void ARDrawingContext::drawCameraFrame()
   glDisable(GL_TEXTURE_2D);
 }
 
+//建立合适的opengl投影矩阵
 void ARDrawingContext::drawAugmentedScene()
 {
   // Init augmentation projection
